@@ -1,6 +1,7 @@
 <svg version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
   <script>
     const params = new URL(location.href).searchParams;
+    alert(params.getAll())
     const text = params.get('text');
     const lines = text.split(' | ');
     const timePerChar = Number(params.get('timePerChar'));
