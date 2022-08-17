@@ -10,7 +10,6 @@
     const background = params.get('background');
     const family = params.get('family');
     const size = params.get('size');
-    const width = params.get('width');
     alignment.toLowerCase()==='center'?alignment='middle':0;
     let j=0;
 
@@ -19,7 +18,6 @@
       document.querySelector('svg').append(textElem);
       textElem.setAttribute('dominant-baseline', alignment);
       textElem.setAttribute('text-anchor', alignment);
-      textElem.style.width = width+'px';
       textElem.style.fill = color;
       textElem.style.fontSize = size;
       textElem.style.fontFamily = family;
