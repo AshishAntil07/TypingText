@@ -7,7 +7,7 @@
     const rest = Number(params.get('rest'));
     const color = params.get('color');
     let alignment = params.get('alignment');
-    const background = params.get('background');
+    const background = params.get('background')?0:'lightgray';
     const family = params.get('family');
     const size = params.get('size');
     alignment.toLowerCase()==='center'?alignment='middle':0;
