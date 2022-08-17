@@ -2,7 +2,7 @@
   <script>
     const params = new URL(location.href).searchParams;
     const text = params.get('text');
-    const lines = text.split('|');
+    const lines = text.split(' | ');
     const timePerChar = Number(params.get('timePerChar'));
     const rest = Number(params.get('rest'));
     const color = params.get('color');
