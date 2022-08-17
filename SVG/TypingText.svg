@@ -1,0 +1,59 @@
+<svg version="1.1" width="100%" height="600" xmlns="http://www.w3.org/2000/svg">
+  <script>
+    const params = new URL(location.href).searchParams;
+    const text = params.get('text');
+    const lines = text.split('|');
+    const timePerChar = Number(params.get('timePerChar'));
+    const rest = Number(params.get('rest'));
+    const color = params.get('color');
+    let alignment = params.get('alignment');
+    const background = params.get('background');
+    const family = params.get('family');
+    const size = params.get('size');
+    const width = params.get('width');
+    alignment.toLowerCase()==='center'?alignment='middle':0;
+    let j=0;
+
+    if(text){
+      const textElem = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      document.querySelector('svg').append(textElem);
+      textElem.setAttribute('x', '200px')
+      textElem.setAttribute('y', '200px')
+      textElem.setAttribute('dominant-baseline', alignment);
+      textElem.setAttribute('text-anchor', alignment);
+      textElem.style.width = width+'px';
+      textElem.style.fill = color;
+      textElem.style.fontSize = size;
+      textElem.style.fontFamily = family;
+      textElem.style.textAlign = alignment;
+      textElem.style.background = background;
+
+      function lineTyper(line){
+        line = lines[j].trim()
+        const charInterval = setInterval(() => {
+          if(!line[0]){
+            clearInterval(charInterval)
+            setTimeout(e => {
+              const delInterval = setInterval(() => {
+                textElem.innerHTML = textElem.innerHTML.slice(0, textElem.innerHTML.length-1);
+                if(textElem.innerHTML === ''){
+                  clearInterval(delInterval);
+                  if(!(lines[++j])){
+                    j=0;
+                    setTimeout(e=>lineTyper(lines[j]), rest)
+                  }else{
+                    lineTyper(lines[j]);
+                  }
+                }
+              }, 20)
+            }, rest);
+          }else{
+            textElem.innerHTML += line[0];
+            line = line.slice(1, line.length);
+          }
+        }, timePerChar)
+      }
+      lineTyper(lines[j])
+    }
+  </script>
+</svg>
