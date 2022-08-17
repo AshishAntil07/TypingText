@@ -4,5 +4,7 @@ A typing SVG image to enhance your READMEs' appearance.
 
 ## 👁 Preview :
 <div align='center'>
-  <img src='https://github.com/AshishAntil07/TypingText/blob/main/SVG/TypingText.svg?text=poijtn+opja+iojpae+;+iojapeafd&size=20&alignment=center&family=Times New Roman&color=green&timePerChar=100&rest=1000'>
+
+  [![About Me](https://github.com/AshishAntil07/TypingText/blob/main/SVG/TypingText.svg?text=poijtn+opja+iojpae+|+iojapeafd&size=20&alignment=center&background=lightgray&color=green&timePerChar=100&rest=1000&sanitize=true)](https://github.com/AshishAntil07/TypingText)
+  
 </div>
