@@ -3,6 +3,7 @@
 // $url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 // $urlVariables = parse_str(parse_url($url), $params);
+header('Content-Type: image/svg+xml');
 
 // if(count($urlVariables)==0){
   include_once("./Main/Your.js");
