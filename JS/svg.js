@@ -19,10 +19,10 @@ if(text){
   textElem.setAttribute('text-anchor', alignment);
   alignment==='middle'?textElem.style.transform = 'translate(50%, 20px)':textElem.style.transform = 'translate(0px, 20px)';
 
-  textElem.style.fill = color:0;
-  textElem.style.fontSize = size:0;
-  textElem.style.fontFamily = family:0;
-  textElem.style.background = background:0;
+  textElem.style.fill = color;
+  textElem.style.fontSize = size;
+  textElem.style.fontFamily = family;
+  textElem.style.background = background;
 
   function lineTyper(line){
     line = lines[j].trim()
