@@ -6,7 +6,7 @@ const rest = Number(params.get('rest'))?Number(params.get('rest')):1000;
 const color = params.get('color')?params.get('color'):'gray';
 let alignment = params.get('alignment')?params.get('alignment'):'left';
 const background = params.get('background')?params.get('background'):'transparent';
-const family = params.get('family')?params.get('family'):monospace;
+const family = params.get('family')?params.get('family'):'monospace';
 const size = params.get('size')?params.get('size'):20;
 let j=0;
 
