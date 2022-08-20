@@ -1,6 +1,0 @@
-{
-  name : 'Typing SVG',
-  description : 'A dynamically generated SVG image that shows typing effect.',
-  version: '1.0.0',
-  author : 'Ashish Antil'
-}
