@@ -11,3 +11,5 @@ A typing SVG image to enhance your READMEs' appearance.
 -->
 
 # Under development
+
+This repository is currently under development🛠, and will be ready soon!
