@@ -73,9 +73,10 @@
 // }
 
   echo(
-    `<script>window.location.href = "https://type-svg.herokuapp.com/Main/TypingText.svg?text=Wow+that's+amazing!"</script>`
+    `<script>alert(1)</script>`
   )
-  header("https://type-svg.herokuapp.com/Main/TypingText.svg?text=Wow+that's+amazing!")
+  // header("https://type-svg.herokuapp.com/Main/TypingText.svg?text=Wow+that's+amazing!")
 
 ?>
   </body>
+</html>
