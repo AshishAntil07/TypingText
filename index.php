@@ -5,7 +5,7 @@
 // $urlVariables = parse_str(parse_url($url), $params);
 
 // if(count($urlVariables)==0){
-  include_once("Your.js");
+  include_once("./Main/Your.js");
 // }else{
   echo(
     `
