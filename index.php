@@ -1,12 +1,12 @@
 <?php
 
-$url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+// $url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
-$urlVariables = parse_str(parse_url($url), $params);
+// $urlVariables = parse_str(parse_url($url), $params);
 
-if(count($urlVariables)==0){
-  include_once("Your.html");
-}else{
+// if(count($urlVariables)==0){
+//   include_once("Your.html");
+// }else{
   echo(
     `
       <svg version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +66,6 @@ if(count($urlVariables)==0){
       </svg>
     `
   )
-}
+// }
 
 ?>
