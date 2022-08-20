@@ -4,7 +4,7 @@ $url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_
 
 $urlVariables = parse_str(parse_url($url), $params);
 
-if(!($urlVariables['lines'])){
+if(count($urlVariables)==0){
   include_once("Your.html");
 }else{
   echo(
