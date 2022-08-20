@@ -15,6 +15,5 @@ $line->setStyle('stroke', '#ff0000');
 $doc->addChild($line);
 
 // Add the proper header and echo the SVG
-header('Content-Type: image/svg+xml');
 echo $image;
 ?>
