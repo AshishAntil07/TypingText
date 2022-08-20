@@ -16,11 +16,10 @@
       const textElem = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       alignment?.toLowerCase()==='center'?alignment='middle':0;
       document.querySelector('svg').append(textElem);
-      textElem.style.transform = 'translate(0px, 20px)';
       if(alignment){
         textElem.setAttribute('dominant-baseline', alignment);
         textElem.setAttribute('text-anchor', alignment);
-        alignment==='middle'?textElem.style.transform = 'translate(50%, 20px)';
+        alignment==='middle'?textElem.style.transform = 'translate(50%, 20px)':textElem.style.transform = 'translate(0px, 20px)';
       }
       color?textElem.style.fill = color:0;
       size?textElem.style.fontSize = size:0;
