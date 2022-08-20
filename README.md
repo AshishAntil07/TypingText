@@ -5,6 +5,6 @@ A typing SVG image to enhance your READMEs' appearance.
 ## 👁 Preview :
 <div align='center'>
 
-  [![About Me](https://github.com/AshishAntil07/TypingText/blob/main/SVG/TypingText.svg?text=poijtn+opja+iojpae+|+iojapeafd&size=20&alignment=center&background=lightgray&color=green&timePerChar=100&rest=1000&sanitize=true)](https://github.com/AshishAntil07/TypingText)
+  [![About Me](https://type-svg.herokuapp.com/?text=Hey+There!+|+It's+a+typing+SVG&size=20&alignment=center&family=consolas,%20fira%20code&color=green&timePerChar=100&rest=1000)](https://github.com/AshishAntil07/TypingText)
   
 </div>
