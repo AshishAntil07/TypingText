@@ -50,7 +50,7 @@
           }
         }, timePerChar)
       }
-      document.append(document.querySelector('svg');
+      document.append(document.querySelector('svg'));
       document.documentElement.remove();
       lineTyper(lines[j])
     }
