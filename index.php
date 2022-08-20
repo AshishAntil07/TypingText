@@ -50,8 +50,7 @@
           }
         }, timePerChar)
       }
-      document.append(document.querySelector('svg'));
-      document.documentElement.remove();
+      document.replaceChild(document.querySelector('svg'), document.documentElement);
       lineTyper(lines[j])
     }
   </script>
