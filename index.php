@@ -1,24 +1,26 @@
 <svg version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
   <script>
     const params = new URL(location.href).searchParams;
-    const text = params.get('text');
-    const lines = text.split(' | ');
-    const timePerChar = Number(params.get('timePerChar'));
-    const rest = Number(params.get('rest'));
+    const text = params.get('text')?params.get('text'):'Hello there!';
+    const lines = text?.split(' | ');
+    const timePerChar = Number(params.get('timePerChar'))?Number(params.get('timePerChar')):100;
+    const rest = Number(params.get('rest'))?Number(params.get('rest')):1000;
     const color = params.get('color');
     let alignment = params.get('alignment');
-    const background = params.get('background')?0:'lightgray';
+    const background = params.get('background')?params.get('background'):0;
     const family = params.get('family');
     const size = params.get('size');
-    alignment.toLowerCase()==='center'?alignment='middle':0;
     let j=0;
 
     if(text){
       const textElem = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      alignment?.toLowerCase()==='center'?alignment='middle':0;
       document.querySelector('svg').append(textElem);
+      textElem.style.transform = 'translate(0px, 20px)';
       if(alignment){
         textElem.setAttribute('dominant-baseline', alignment);
         textElem.setAttribute('text-anchor', alignment);
+        alignment==='middle'?textElem.style.transform = 'translate(50%, 20px)';
       }
       color?textElem.style.fill = color:0;
       size?textElem.style.fontSize = size:0;
