@@ -1,5 +1,5 @@
 <svg version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg">
-  <script type='text/javascript'>
+  <script type='application/ecmascript'>
     const params = new URL(location.href).searchParams;
 const text = params.get('text')?params.get('text'):'Hello there!';
 const lines = text.split(' | ');
