@@ -1,4 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-</html>
+<?php 
+  header("Location: https://type-svg.herokuapp.com/TypingText.svg");
+?>
