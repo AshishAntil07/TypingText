@@ -17,6 +17,19 @@ Replace the '[any number]' with your desired height and width respectively. For 
 <iframe src='type-svg.herokuapp.com/TypingText.svg' height='75px' width='100%' frameborder='0'>
 ```
 
+## URL Parameters :
+| Parameters | Description |
+|:----------:|:------------|
+| color      | Specifies the color of the text                     |
+| text       | Specifies the text.                                 |
+| timePerChar| Specifies the rest per character                    |
+| rest       | Specifies the rest after lines                      |
+| background | Specifies the background color of the image         |
+| family     | Specifies the font-family of the text               |
+| size       | Specifies the font-size of the text in pixels.      |
+
+**Note:** Use ' | ' to separate the lines.
+
 <!-- ## 👁 Preview :
 <div align='center'>
 
